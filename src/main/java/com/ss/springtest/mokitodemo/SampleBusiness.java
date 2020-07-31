@@ -16,9 +16,17 @@ public class SampleBusiness {
 
     /**
      *
+     */
+    public SampleBusiness(DataService dataService)
+    {
+        this.dataService = dataService;
+    }
+
+    /**
+     *
      * @return the greatest value of the given dataset
      */
-    private int findGreatestOfAllNums()
+    public int findGreatestOfAllNums()
     {
         dataSet = dataService.returnAllNums();
 
