@@ -52,4 +52,14 @@ public class SampleBusinessAnnotationsTest
         when(dataServiceMock.returnAllNums()).thenReturn(new int[]{5});
         assertEquals(5,sampleBusiness.findGreatestOfAllNums());
     }
+
+    /**
+     * Test case 3
+     */
+    @Test
+    public void findGreatestOfNullTest()
+    {
+        when(dataServiceMock.returnAllNums()).thenReturn(new int[]{});
+        assertEquals(Integer.MIN_VALUE,sampleBusiness.findGreatestOfAllNums());
+    }
 }

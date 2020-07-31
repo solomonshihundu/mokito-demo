@@ -46,4 +46,5 @@ public class SampleBusinessTest
         SampleBusiness sampleBusiness = new SampleBusiness(dataServiceMock);
         assertEquals(5,sampleBusiness.findGreatestOfAllNums());
     }
+
 }
